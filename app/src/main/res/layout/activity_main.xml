@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71D6E3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/unitconverter"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="668dp"
+        android:background="#691FEC"
+        android:gravity="center"
+        android:text="Unit Converter"
+        android:textColorHint="#E6DCDC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="EnterValue"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitconverter"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/cm"
+        android:layout_width="165dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="39dp"
+        android:text="Convert To cm"
+        app:layout_constraintBottom_toTopOf="@+id/kg"
+        app:layout_constraintEnd_toStartOf="@+id/meter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+    <Button
+        android:id="@+id/meter"
+        android:layout_width="156dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="41dp"
+        android:text="Convert To m"
+        app:layout_constraintBottom_toTopOf="@+id/gram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cm"
+        app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="100dp"
+        android:hint="Answer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Value"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/kg"
+        android:layout_width="164dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="196dp"
+        android:text="Convert to kg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm" />
+
+    <Button
+        android:id="@+id/gram"
+        android:layout_width="160dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="196dp"
+        android:text="convert to gm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kg"
+        app:layout_constraintTop_toBottomOf="@+id/meter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
